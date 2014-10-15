@@ -9,11 +9,11 @@ func_diff()
 main()
 {
     src=/Users/haoweishow/.zshrc
-	tar=user.zshrc
+	tar=haoweishow.zshrc
 	func_diff
 
 	src=/Users/haoweishow/.vimrc
-	tar=user.vimrc
+	tar=haoweishow.vimrc
 	func_diff
 }
 
