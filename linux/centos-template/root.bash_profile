@@ -15,3 +15,4 @@ alias gl='git log'
 alias ds='du -sh *'
 alias doc='cd /root/Documents;pwd'
 alias dl='cd /root/Downloads;pwd'
+unset SSH_ASKPASS
