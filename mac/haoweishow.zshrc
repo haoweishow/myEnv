@@ -146,7 +146,7 @@ h1()
     echo "      sudo periodic daily weekly monthly                  #系统维护"
     echo "      sudo xcode-select -switch /Applications/Xcode.app   #更新Xcode"
 	echo "发送邮件"
-	echo "echo \"Body goes here\" | mutt -s \"A subject\" -a /path/to/file.tar.gz haoweishow@163.com"
+	echo "      echo \"Body goes here\" | mutt -s \"A subject\" -a /path/to/file.tar.gz haoweishow@163.com"
     echo "保持唤醒"
     echo "      pmset noidle"
     echo "程序配置"
@@ -160,9 +160,9 @@ h1()
     echo "      rd = rake generate;rake deploy  #发布文章到github"
     echo "      git push origin source          #提交本地代码到github的远程仓库的source分支"
 	echo "更新octopress"
-	echo "     git remote add octopress https://github.com/imathis/octopress.git"
-	echo "     git pull octopress master"
-	echo "     bundle update" 
+	echo "      git remote add octopress https://github.com/imathis/octopress.git"
+	echo "      git pull octopress master"
+	echo "      bundle update" 
 }
 
 hgit()
@@ -206,6 +206,18 @@ h3()
     echo "       brew deps xxxx        #软件依赖"
     echo "       brew outdated         #过期软件"
 }
+
+hvm()
+{
+    echo "虚拟机信息"
+    echo "      CentOS_Oracle_paic_kq_esb  10.211.55.14  #安装oracle,网络代理"
+    echo "      CentOS_DB2_spdb_esb        10.211.55.10  #安装DB2,浦发ESB,块钱ESB,服务治理"
+}
+#################### docker ###################
+export DOCKER_HOST=tcp://127.0.0.1:2376
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/haoweishow/.boot2docker/certs/boot2docker-vm
 
 #################### trace zsh time step 2/2 ######################################
 #### 关闭 zsh tracing
